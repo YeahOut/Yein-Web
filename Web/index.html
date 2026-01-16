@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>최예인 | SSAFY 예비 개발자</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav>
+        <a href="#intro" class="logo">최예인</a>
+        <ul class="nav-links">
+            <li><a href="#intro">소개</a></li>
+            <li><a href="#projects">프로젝트</a></li>
+            <li><a href="#goals">목표</a></li>
+        </ul>
+        <button class="theme-toggle" id="themeToggle">
+            <i class="fas fa-moon"></i>
+        </button>
+    </nav>
+
+    <section id="intro">
+        <div class="container">
+            <div class="profile-img">
+                <i class="fas fa-user-astronaut"></i>
+            </div>
+            <div class="intro-text">
+                <h1>안녕하세요,<br>개발자 <span class="highlight">최예인</span>입니다! 👋</h1>
+                <p>다양한 개발 도메인 경험을 갖고 있습니다.<br>SSAFY에서 늘 왜?라는 질문을 던지려고 합니다.</p>
+                <div class="tag-container" style="justify-content: center; margin-bottom: 2rem;">
+                    <span class="tag">#컴공 22학번</span>
+                    <span class="tag">#백엔드 개발</span>
+                    <span class="tag">#SSAFY_15기</span>
+                </div>
+                <a href="#about" class="btn">더 알아보기</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <h3>🌱 성장하는 개발자</h3>
+                <p style="margin-top: 10px; color: var(--text-secondary);">
+                    기술의 발전에 깨어있는 개발자가 되길 희망합니다.<br>
+                    개발을 통해 사회적 가치를 실현하고자 하는 목표를 가지고 있습니다.
+                </p>
+                
+                <button class="btn" id="toggleDetailBtn" style="margin-top: 20px; font-size: 0.9rem; padding: 8px 20px;">
+                    자세히 보기 <i class="fas fa-chevron-down"></i>
+                </button>
+
+                <div class="detail-info" id="detailInfo">
+                    <div style="margin-bottom: 20px;">
+                        <h4>📚 학력</h4>
+                        <p>D대학교 컴퓨터공학전공 (22학번)</p>
+                    </div>
+                    <div style="margin-bottom: 20px;">
+                        <h4>💼 경험</h4>
+                        <p><strong>신한은행 ICT 인턴</strong> (2025.07 - 2025.08)</p>
+                        <ul style="list-style-position: inside; color: var(--text-secondary); font-size: 0.9rem;">
+                            <li>여신서비스 개발부 예금담보대출 마이그레이션 프로젝트</li>
+                            <li>신한 포인트를 활용한 블록체인 기부 서비스 제작</li>
+                        </ul>
+                        <p><strong>씨티아이앤씨(주) 인턴</strong> (2024.06 - 2024.08)</p>
+                        <ul style="list-style-position: inside; color: var(--text-secondary); font-size: 0.9rem;">
+                            <li>미래내일일경험 프로젝트 진행</li>
+                            <li>시각장애인을 위한 보안 안심 동행 프로젝트 개발</li>
+                        </ul>
+                            </div>
+                        <div style="margin-bottom: 20px;">
+                             <h4>✨ 대표수상</h4>
+                        <ul style="list-style-position: inside; color: var(--text-secondary); font-size: 0.9rem;">
+                            <li>[2025.12.05] 매경미디어 NEXT AI HACKATHON 대상 (매경미디어 회장상)</li>
+                            <li>[2025.02.07] 한국통신학회 동계종합학술발표회 아이디어경진대회 우수상 (한국통신학회 회장상)</li>
+                        </ul>
+
+                        </div>
+                       
+                
+                    <div>
+                        <h4>🛠 기술 스택</h4>
+                        <div class="tag-container">
+                            <span class="tag">React</span>
+                            <span class="tag">SpringBoot</span>
+                            <span class="tag">RAG</span>
+                            <span class="tag">Django</span>
+                            <span class="tag">Solidity</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <!-- 프로젝트 섹션 (수정됨) -->
+     <section id="projects">
+        <div class="container">
+            <h2>My Projects</h2>
+            <div class="projects-grid">
+                <!-- Project 1: Smart Fish Farm -->
+                <div class="project-card">
+                    <i class="fas fa-fish project-icon"></i>
+                    <h3 class="project-title">스마트 양식장 관리 시스템</h3>
+                    <p class="project-desc">IoT 센서를 활용해 수온, 산소 농도 등 양식장 환경을 실시간 모니터링하고 원격 제어하는 서비스입니다. 데이터 시각화를 통해 효율적인 양식 환경을 제공합니다.</p>
+                    <div class="tag-container">
+                        <span class="tag">IoT</span>
+                        <span class="tag">ELK Stack</span>
+                        <span class="tag">Isolation Forest</span>
+                    </div>
+                </div>
+
+                <!-- Project 2: Music Recommendation -->
+                <div class="project-card">
+                    <i class="fas fa-music project-icon"></i>
+                    <h3 class="project-title">감정 기반 노래 추천 웹서비스</h3>
+                    <p class="project-desc">사용자의 현재 기분이나 선호 장르를 분석하여 맞춤형 플레이리스트를 제공하는 웹 서비스입니다. 사용자 경험(UX) 중심의 인터페이스를 설계했습니다.</p>
+                    <div class="tag-container">
+                        <span class="tag">Django</span>
+                        <span class="tag">Algorithm</span>
+                        <span class="tag">Spotify</span>
+                    </div>
+                </div>
+
+                <!-- Project 3: Support for Middle-Aged -->
+                <div class="project-card">
+                    <i class="fas fa-user-tie project-icon"></i>
+                    <h3 class="project-title">중장년층 취업 지원 플랫폼</h3>
+                    <p class="project-desc">제 2의 인생을 준비하는 중장년층을 위해 맞춤형 일자리 정보와 교육 콘텐츠를 매칭해주는 서비스입니다. 사회적 가치 실현을 목표로 기획되었습니다.</p>
+                    <div class="tag-container">
+                        <span class="tag">AI Agent</span>
+                        <span class="tag">Express JS</span>
+                        <span class="tag">Latex</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="goals">
+        <div class="container">
+            <h2>Goals</h2>
+            <div class="goals-container">
+                <div class="goal-card">
+                    <div class="goal-type">ABSTRACT</div>
+                    <div class="goal-content">
+                        <h3>🌏 사회적 가치 실현</h3>
+                        <p>단순히 기능을 구현하는 코더가 아닌, 기술을 통해 세상에 긍정적인 영향력을 미치는 개발자가 되는 것이 궁극적인 목표입니다.</p>
+                    </div>
+                </div>
+
+                <div style="text-align: center; color: var(--primary-color); font-size: 1.5rem;">
+                    <i class="fas fa-arrow-down"></i> <span style="font-size: 0.9rem; font-weight: bold;">Step by Step</span>
+                </div>
+
+                <div class="goal-card" style="border: 2px solid var(--primary-color);">
+                    <div class="goal-type">SPECIFIC</div>
+                    <div class="goal-content">
+                        <h3>🏆 삼성 B형 취득하기</h3>
+                        <p>삼성취업이라는 목표를 이루기 위한 첫 단추입니다. <br>이번 <strong>SSAFY 상반기 내에 알고리즘 역량을 입증하는 삼성 SW 역량테스트 B형을 취득</strong>하겠습니다.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="social-links">
+                <a href="https://github.com/YeahOut" target="_blank" title="Github"><i class="fab fa-github"></i></a>
+                <a href="https://velog.io/@jolly_yeah/posts" target="_blank" title="Velog"><i class="fas fa-blog"></i></a>
+                <a href="mailto:pt840072@dgu.ac.kr" title="Email"><i class="fas fa-envelope"></i></a>
+                <a href="https://www.instagram.com/jolly_yeah/" title="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+            <p>&copy; 2026 Choi Ye-in. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
